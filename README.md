@@ -52,6 +52,7 @@ Data/                  # JSON con datos
 - Cache de datos JSON en memoria
 - Dependency injection para testabilidad
 
+
 ## Autor
 Juan Camilo Rayo Castillo
 Desarrollado como prueba técnica para Voltec.
