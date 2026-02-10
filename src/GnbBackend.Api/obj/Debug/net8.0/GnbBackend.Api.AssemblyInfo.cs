@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GnbBackend.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e687e8e7b6c636f230723b80880792a818938f30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26fbf167e673b3fefb52f1caf220cae5e1ae3c5e")]
 [assembly: System.Reflection.AssemblyProductAttribute("GnbBackend.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GnbBackend.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
