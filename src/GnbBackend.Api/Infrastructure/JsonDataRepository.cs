@@ -2,6 +2,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using GnbBackend.Core.Interfaces;
 using GnbBackend.Core.Models;
+using Microsoft.Extensions.Configuration;
 
 namespace GnbBackend.Api.Infrastructure;
 
@@ -12,7 +13,7 @@ public class JsonDataRepository : IDataRepository
     private List<Transaction>? _cachedTransactions;
     private List<ExchangeRate>? _cachedRates;
 
-    public JsonDataRepository(Iconfiguration configuration, ILogger<JsonDataRepository> logger)
+    public JsonDataRepository(IConfiguration configuration, ILogger<JsonDataRepository> logger)
     {
         _dataPath = configuration["DataPath"] ?? "../../Data";
         _logger = logger;
@@ -53,6 +54,6 @@ public class JsonDataRepository : IDataRepository
     public async Task<IEnumerable<Transaction>> GetTransactionsBySkuAsync(string sku)
     {
         var all = await GetAllTransactionsAsync();
-        return all.Where(t => t.sku.Equals(sku, StringComparison.OrdinalIgnoreCase));
+        return all.Where(t => t.Sku.Equals(sku, StringComparison.OrdinalIgnoreCase));
     }
 }

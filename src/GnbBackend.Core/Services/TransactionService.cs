@@ -10,7 +10,7 @@ public class TransactionService : ITransactionService
     private readonly ICurrencyConverter _currencyConverter;
     private readonly ILogger<TransactionService> _logger;
 
-    public TransactionService( IDataRepository repository, ICurrencyConverter currencyConverter, ILogger<TransactionService> logger)
+    public TransactionService(IDataRepository repository, ICurrencyConverter currencyConverter, ILogger<TransactionService> logger)
     {
         _repository = repository;
         _currencyConverter = currencyConverter;
@@ -22,10 +22,11 @@ public class TransactionService : ITransactionService
         var transactions = await _repository.GetTransactionsBySkuAsync(sku);
         var transactionsList = transactions.ToList();
 
-        if (!transactionsList.Any()){
-            return new SkuDetail{
+        if (!transactionsList.Any()) {
+            return new SkuDetail
+            {
                 Sku = sku,
-                Transactions = new List<ConvertedTransaction>();
+                Transactions = new List<ConvertedTransaction>(),
                 TotalInEur = 0m,
                 ConversionWarnings = new List<string> { "No transactions found" }
             };
@@ -40,32 +41,35 @@ public class TransactionService : ITransactionService
 
             if (amountInEur.HasValue){
                 totalInEur += amountInEur.Value;
-                convertedTransactions.Add(new ConvertedTransaction{
+
+                convertedTransactions.Add(new ConvertedTransaction
+                {
                     Sku = transaction.Sku,
                     OriginalAmount = transaction.Amount,
                     OriginalCurrency = transaction.Currency,
                     AmountInEur = amountInEur.Value
-                })
+                });
             } else {
                 var warning = $"Cannot convert {transaction.Amount} {transaction.Currency}";
-                warning.Add(warning);
+                warnings.Add(warning);
 
-                convertedTransactions.Add(new ConvertedTransaction{
+                convertedTransactions.Add(new ConvertedTransaction
+                {
                     Sku = transaction.Sku,
                     OriginalAmount = transaction.Amount,
                     OriginalCurrency = transaction.Currency,
-                    AmountInEur = "No conversion path to EUR"
+                    AmountInEur = 0m
                 });
             }
         }
-        totalInEur = Math.Round(totalInEur, 2, MidPointRounding.ToEven);
+        totalInEur = Math.Round(totalInEur, 2, MidpointRounding.ToEven);
 
-        return new SkuDetail{
+        return new SkuDetail
+        {
             Sku = sku,
-            Transaction = convertedTransactions,
+            Transactions = convertedTransactions,
             TotalInEur = totalInEur,
             ConversionWarnings = warnings
         };
     }
-
 }

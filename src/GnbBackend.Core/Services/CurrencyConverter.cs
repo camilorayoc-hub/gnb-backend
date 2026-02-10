@@ -31,7 +31,7 @@ public class CurrencyConverter : ICurrencyConverter
 
     public decimal? Convert(decimal amount, string fromCurrency, string toCurrency)
     {
-        if (fromCurrency == toCurrency) return Math.Round(amount, 2, MidPointRounding.ToEven);
+        if (fromCurrency == toCurrency) return Math.Round(amount, 2, MidpointRounding.ToEven);
 
         if (!_conversionGraph.ContainsKey(fromCurrency)){
             _logger.LogWarning("Currency {From} not found", fromCurrency);
@@ -52,7 +52,7 @@ public class CurrencyConverter : ICurrencyConverter
             var rate = _conversionGraph[current].First(x => x.Currency == next).Rate;
 
             result *= rate;
-            result = Math.Round(result, 2, MidPointRounding.ToEven);
+            result = Math.Round(result, 2, MidpointRounding.ToEven);
         }
         return result;
     }
@@ -77,7 +77,7 @@ public class CurrencyConverter : ICurrencyConverter
                 foreach(var (nextCurrency, _) in _conversionGraph[current]){
                     if (!visited.Contains(nextCurrency)){
                         visited.Add(nextCurrency);
-                        var newPath = new List<string>(path) { nextCurrency }
+                        var newPath = new List<string>(path) { nextCurrency };
                         queue.Enqueue((nextCurrency, newPath));
                     }
                 }

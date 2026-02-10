@@ -3,7 +3,7 @@
     <Project Path="src/GnbBackend.Api/GnbBackend.Api.csproj" />
     <Project Path="src/GnbBackend.Core/GnbBackend.Core.csproj" />
   </Folder>
-  <Folder Name="/src/GnbBackend.Core/">
-    <Project Path="src/GnbBackend.Core/GnbBackend.Core/GnbBackend.Core.csproj" />
+  <Folder Name="/tests/">
+    <Project Path="tests/GnbBackend.Tests/GnbBackend.Tests.csproj" />
   </Folder>
 </Solution>

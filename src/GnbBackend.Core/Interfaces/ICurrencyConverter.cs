@@ -1,4 +1,4 @@
-namespace GnbBackend.core.Interfaces;
+namespace GnbBackend.Core.Interfaces;
 
 public interface ICurrencyConverter
 {

@@ -1,0 +1,13 @@
+C:\Projects\gnb-backend\gnb-backend\src\GnbBackend.Core\obj\Debug\net8.0\GnbBackend.Core.csproj.AssemblyReference.cache
+C:\Projects\gnb-backend\gnb-backend\src\GnbBackend.Core\obj\Debug\net8.0\GnbBackend.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\gnb-backend\gnb-backend\src\GnbBackend.Core\obj\Debug\net8.0\GnbBackend.Core.AssemblyInfoInputs.cache
+C:\Projects\gnb-backend\gnb-backend\src\GnbBackend.Core\obj\Debug\net8.0\GnbBackend.Core.AssemblyInfo.cs
+C:\Projects\gnb-backend\gnb-backend\src\GnbBackend.Core\obj\Debug\net8.0\GnbBackend.Core.csproj.CoreCompileInputs.cache
+C:\Projects\gnb-backend\gnb-backend\src\GnbBackend.Core\obj\Debug\net8.0\GnbBackend.Core.sourcelink.json
+C:\Projects\gnb-backend\gnb-backend\src\GnbBackend.Core\bin\Debug\net8.0\GnbBackend.Core.deps.json
+C:\Projects\gnb-backend\gnb-backend\src\GnbBackend.Core\bin\Debug\net8.0\GnbBackend.Core.dll
+C:\Projects\gnb-backend\gnb-backend\src\GnbBackend.Core\bin\Debug\net8.0\GnbBackend.Core.pdb
+C:\Projects\gnb-backend\gnb-backend\src\GnbBackend.Core\obj\Debug\net8.0\GnbBackend.Core.dll
+C:\Projects\gnb-backend\gnb-backend\src\GnbBackend.Core\obj\Debug\net8.0\refint\GnbBackend.Core.dll
+C:\Projects\gnb-backend\gnb-backend\src\GnbBackend.Core\obj\Debug\net8.0\GnbBackend.Core.pdb
+C:\Projects\gnb-backend\gnb-backend\src\GnbBackend.Core\obj\Debug\net8.0\ref\GnbBackend.Core.dll
