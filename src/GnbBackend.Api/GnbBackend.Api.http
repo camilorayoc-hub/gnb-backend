@@ -1,0 +1,6 @@
+@GnbBackend.Api_HostAddress = http://localhost:5082
+
+GET {{GnbBackend.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

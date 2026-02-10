@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/src/">
+    <Project Path="src/GnbBackend.Api/GnbBackend.Api.csproj" />
     <Project Path="src/GnbBackend.Core/GnbBackend.Core.csproj" />
   </Folder>
   <Folder Name="/src/GnbBackend.Core/">
