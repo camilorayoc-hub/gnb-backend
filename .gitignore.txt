@@ -1,0 +1,19 @@
+## Visual Studio
+*.suo
+*.user
+.vs/
+.vscode/
+
+## Build
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+
+## .NET
+project.lock.json
+*.dll
+*.exe
+
+## Mac
+.DS_Store
