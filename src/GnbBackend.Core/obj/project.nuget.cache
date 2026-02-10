@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "6SPqSKCiX5w=",
+  "dgSpecHash": "+63Uzb8JEaU=",
   "success": true,
   "projectFilePath": "C:\\Projects\\gnb-backend\\gnb-backend\\src\\GnbBackend.Core\\GnbBackend.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\JuanCamilo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.3\\microsoft.extensions.dependencyinjection.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\JuanCamilo\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.3\\microsoft.extensions.logging.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\JuanCamilo\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.3\\system.diagnostics.diagnosticsource.10.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
